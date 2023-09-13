@@ -13,6 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
 
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- tailwind customizing -->
 <script>
     tailwind.config = {
@@ -25,6 +28,7 @@
       }
     }
   </script>
+
 
 <style>
     .bg-image{
@@ -91,30 +95,50 @@
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
               <img src="images/banner2.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 http://127.0.0.1:5500/index.html#slide1right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
-                <div class="text-amber-50">
+                <div class="text-amber-50 justify-between text-center">
                     <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> 
                         doorstep</h2> 
                         <p class="font-normal pt-1">We supply highly quality organic products</p>
-                        <button class=" navbar-center bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+                        
+                        <button class="  text-center bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+                    
                     </div>
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <div class="text-amber-50">
+                      <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> doorstep</h2> 
+                          <p class="font-normal pt-1">We supply highly quality organic products</p>
+                          <button class=" navbar-center bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+                      </div>
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+
+
+
             <div id="slide3" class="carousel-item relative w-full">
               <img src="images/banner3.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <div class="text-amber-50">
-                    <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> 
-                        doorstep</h2> 
+                    <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> doorstep</h2> 
                         <p class="font-normal pt-1">We supply highly quality organic products</p>
-                        <button class=" bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+                        <button class=" navbar-center bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
                     </div>
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
+
+
+
             <div id="slide4" class="carousel-item relative w-full">
               <img src="images/banner4.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -123,7 +147,9 @@
                     <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> 
                         doorstep</h2> 
                         <p class="font-normal pt-1">We supply highly quality organic products</p>
-                        <button class=" bg-rose-600 rounded-lg pt-2 p-2  ">Shop Now</button>
+                        
+                        <button class=" bg-rose-600 rounded-lg pt-2 p-2 justify-center align-middle text-center items-center ">Shop Now</button>
+                    
                     </div> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
@@ -168,8 +194,8 @@
                       <h2 class=" text-center justify-center ">Apples</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                       <div class="card-actions justify-center">
-                        <button class="btn">Details
-                        </button>
+                        <a class="link link-hover px-2 text-red-500">Details</a>  
+                        
                       </div>
                     </div>
                   </div>
@@ -183,7 +209,7 @@
                       <h2 class=" text-center justify-center">Orange</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                       <div class="card-actions justify-center">
-                        <button class="btn">Details</button>
+                        <a class="link link-hover px-2 text-red-500">Details</a>
                       </div>
                     </div>
                   </div>
@@ -196,7 +222,7 @@
                       <h2 class=" text-center justify-center">Red Dragon</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                       <div class="card-actions justify-center">
-                        <button class="btn">Details</button>
+                        <a class="link link-hover px-2 text-red-500">Details</a>
                       </div>
                     </div>
                   </div>
@@ -209,19 +235,19 @@
                       <h2 class=" text-center  justify-center">Banana</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                       <div class="card-actions justify-center">
-                        <button class="btn">Details</button>
+                        <a class="link link-hover px-2 text-red-500">Details</a>
                       </div>
                     </div>
                   </div>
             </section>
             <div class="pt-10 justify-center align-middle text-center ">
-            <button class="bg-red-500   p-2 rounded-lg">Shop All</button>
+            <button class="bg-red-500 mb-8  p-2 rounded-lg">Shop All</button>
         </div>
         </div>
 
         <!-- Meet the team section -->
 
-        <div class="bg-image min-w-full  ">
+        <div class="bg-image min-w-full pt-10  ">
             <section>
             <div class=" text-center justify-center items-center pt-24 text-slate-50"> 
                 <h2 class="text-3xl font-semibold">Meet the team section</h2>
@@ -284,48 +310,76 @@
             <section>
                 <div class=" justify-center text-center">
                     <h1 class="text-3xl font-semibold pt-12">Why Choose Us</h1>
-                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    <p >Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                         Latin literature from 45 BC, making it over 2000 years old</p>
                     
                 </div>
             </section>
 
-            <section class="flex">
-                <div>
+            <section class="flex pt-10 justify-between ">
+                <div class="pt-10">
+                    <div class="flex gap-2">
+                    <div><i class="fa-solid fa-people-group"></i></div>
                     <div>
+                        <h3 class="font-semibold ">Dedicated Team</h3>
+                        <p class="text-sm pt-3 pb-1.5">Professional employees are there for you to pick <br>
+                            the most amazing and fresh fruits</p>
+                    </div>
+                </div>
 
-                        <h3>Dedicated Team</h3>
-                        <p>Professional employees are there for you to pick <br>
-                            the most amazing and fresh fruits</p>
-                    </div>
+                    <div class="flex gap-2">
+                    <div> <i class="fa-brands fa-gratipay"></i></div>
                     <div> 
-                        <h3>Fresh is Best</h3>
-                        <p>Professional employees are there for you to pick <br>
+                        <h3 class=" font-semibold">Fresh is Best</h3>
+                        <p class="text-sm pt-3 pb-1.5"> Professional employees are there for you to pick <br>
                             the most amazing and fresh fruits</p>
                     </div>
-                    <div>
-                        <h3>Gift Certificates</h3>
-                        <p>Professional employees are there for you to pick <br>
+                </div>
+
+
+                    <div class="flex gap-2">
+                        <div><i class="fa-solid fa-gift"></i></div>
+                    <div >
+                        <h3 class="font-semibold">Gift Certificates</h3>
+                        <p class="text-sm pt-3 pb-1.5">Professional employees are there for you to pick <br>
                             the most amazing and fresh fruit</p>
                     </div>
                 </div>
+                </div>
                 <div>
-                    <img src="images/whychoose1.png" alt="">
+                    <img class="pt-10 max-h-60 w-11/12" src="images/whychoose1.png" alt="">
                 </div>
 
-                <div>
+                <div class="pt-10 div justify-end text-end">
+                   
+                        
+                    
                     <div>
-                        <h3>Integrated Supplier</h3>
-                        <p></p>
-                    </div>
-                    <div>
-                        <h3>Sustainable Practice</h3>
-                        <p></p>
+                        
+                        <div><h3 class="font-semibold ">Integra Supplier <span><i class="fa-brands fa-apple"></i></span> </h3>
+                        <p class="text-sm pt-3 pb-1.5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                    
                 </div>
+
+                
+                
+
                     <div>
-                        <h3>Sustainable Practice</h3>
-                        <p></p>
+                        <h3 class="font-semibold">Sustainable Practice <span><i class="fa-solid fa-ice-cream"></i></span></h3>
+                        <p class="text-sm pt-3 pb-1.5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.
+                            </p>
+                </div>
+
+            
+
+             
+            
+                    <div>
+                        <h3 class="font-semibold"> Sustainable Practice <span><i class="fa-regular fa-thumbs-up"></i></span></h3>
+                        <p class="text-sm pt-3 pb-1.5 ">Professional employees are there for you to pick <br> the most amazing and fresh fruits.
+                        </p>
                     </div>
+                
                 </div>
 
             </section>
