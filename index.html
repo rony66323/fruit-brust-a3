@@ -13,6 +13,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
 
+<!-- tailwind customizing -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
 
 
 </head>
@@ -20,7 +33,7 @@
 
 
 <body>
-    <header>
+    <header class="md:container md:mx-auto">
         <nav >
             
             <div class="navbar bg-base-100 navbar bg-rose-600 text-primary-content rounded-full">
@@ -48,9 +61,153 @@
                   </div>
               </div>
         </nav>
+
+        <!--------------- banner -------------->
+        
+        <div class="carousel w-full pt-8">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <div class="text-amber-50">
+                <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> doorstep</h2> 
+                    <p class="font-normal pt-1">We supply highly quality organic products</p>
+                 
+                   <button class=" bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+
+                  
+                </div>
+                
+                <a href="#slide2" class="btn btn-circle">❯</a>
+               
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 http://127.0.0.1:5500/index.html#slide1right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <div class="text-amber-50">
+                    <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> 
+                        doorstep</h2> 
+                        <p class="font-normal pt-1">We supply highly quality organic products</p>
+                        <button class=" navbar-center bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+                    </div>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <div class="text-amber-50">
+                    <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> 
+                        doorstep</h2> 
+                        <p class="font-normal pt-1">We supply highly quality organic products</p>
+                        <button class=" bg-rose-600 rounded-lg p-2  pt-2">Shop Now</button>
+                    </div>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <div class="text-amber-50">
+                    <h2 class="font-black text-4xl justify-center text-center" >Exotic tastes at your <br> 
+                        doorstep</h2> 
+                        <p class="font-normal pt-1">We supply highly quality organic products</p>
+                        <button class=" bg-rose-600 rounded-lg pt-2 p-2  ">Shop Now</button>
+                    </div> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
     </header>
 
-    <main>
+    <main class="md:container md:mx-auto">
+
+        <!-- Deal of the day -->
+        <div>
+        <section class="pt-10 flex justify-between">
+            <div>
+                <h1 class="text-3xl font-semibold">Deal of the day</h1>
+                <p >Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex gap-8 items-center justify-center text-center">
+                <div >
+                    <p class="text-2xl">20 <span>:</span></p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p class="text-2xl">10 <span>:</span></p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p class="text-2xl">56 <span>:</span></p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p class="text-2xl">30 </p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </section>
+            <section class="pt-10 flex gap-4 text-center">
+             <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
+                    <h3 class="pt-6 text-center font-semibold">12.90$ - 18.85$</h3>
+                    <p class="border-2 divide-solid bg-red-180 "></p>
+                    <div class="card-body ">
+                      <h2 class=" text-center justify-center ">Apples</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card------2 -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit7.png" alt="Shoes" /></figure>
+                    <h3 class="pt-6 text-center font-semibold">12.90$ - 18.85$</h3>
+                    <p class="border-2 bg-red-200"></p>
+                    <div class="card-body">
+                      <h2 class=" text-center justify-center">Orange</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-3 -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit8.png" alt="Shoes" /></figure>
+                    <h3 class="pt-6 text-center font-semibold">12.90$ - 18.85$</h3>
+                    <p class="border-2 bg-red-200"></p>
+                    <div class="card-body">
+                      <h2 class=" text-center justify-center">Red Dragon</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- card----4 -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit9.png" alt="Shoes" /></figure>
+                    <h3 class="pt-6 text-center font-semibold">12.90$ - 18.85$</h3>
+                    <p class="border-2 bg-red-200"></p>
+                    <div class="card-body ">
+                      <h2 class=" text-center  justify-center">Banana</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </div>
 
     </main>
    
